@@ -1,0 +1,159 @@
+header
+{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    height: 60px;
+    width: 100%;
+}
+
+header nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 60px;
+    padding: 5px 40px;
+}
+
+header nav ul
+{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li
+{
+    height: 60px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li a
+{
+    text-align: center;
+    color: var(--text-primary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+header nav ul li a:hover
+{
+    color: var(--text-secondary);
+}
+
+.header-h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: var(--text-primary);
+}
+
+.header-h1 a
+{
+    cursor: pointer;
+    transition: all .2s;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.header-h1 a:hover
+{
+    color: var(--text-secondary);
+}
+
+.navbar-hidden
+{
+    display: none;
+}
+
+.navbar-active
+{
+    display: flex;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px)
+{
+
+    .navbar-hidden
+    {
+        display: block !important;
+        color: var(--text-primary);
+        font-size: 2rem;
+    }
+
+    .navbar-active
+    {
+        display: none !important;
+    }
+
+    header nav ul.navbar-active
+    {
+        display: block;
+        top: -100%;
+    }
+
+    header nav ul.navbar-hidden
+    {
+        top: 0;
+    }
+
+    header nav ul
+    {
+        background-color: var(--bg-dark);
+        position: fixed;
+        top: 0;
+        left: 0;
+        list-style: none;
+        display: flex;
+        width: 100%;
+        height: 100vh; /* Potencijalni toFix */
+        transition: all .3s;
+        z-index: 999;
+        transition: all .3s;
+    }
+
+    header nav ul li
+    {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        border-top: 1px solid var(--border-light);
+        border-bottom: 1px solid var(--border-light);
+        padding: 10px 40px;
+    }
+
+    header nav ul li:first-child /* Targeting 'X' button */
+    {
+        justify-content: flex-end !important;
+        border-top: none;
+        border-bottom: none;
+        height: 60px;
+    }
+
+    header nav ul li a
+    {
+        text-align: center;
+        color: var(--text-primary);
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .2s;
+    }
+} 
+
+/* Tablet */
+@media screen and ((min-width: 768px) and (max-width: 1200px))
+{
+
+}
