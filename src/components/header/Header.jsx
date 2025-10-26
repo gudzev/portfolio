@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { useState } from "react"; 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,10 +7,9 @@ import "./Header.css";
 
 export function Header()
 {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
-    let closeClassName = (open === true) ? "navbar-hidden" : "navbar-active"; // for ul
-    let openClassName = (open === true) ? "navbar-active" : "navbar-hidden"; // for faBars
+    let navbarHidden = (open !== true) ? "navbar-hidden" : "navbar-active";
 
     function toggleMenu()
     {
@@ -21,14 +19,14 @@ export function Header()
     return (
         <header>
             <nav>
-                <h2 className="header-h1"><NavLink to="/">Marko Gudžev</NavLink></h2>
-                <FontAwesomeIcon icon={faBars} className={openClassName} onClick={toggleMenu} />
-                <ul className={closeClassName}>
-                    <li><FontAwesomeIcon icon={faXmark} className={closeClassName} onClick={toggleMenu} /></li>
-                    <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="#about">About</NavLink></li>
-                    <li><NavLink to="#projects">Projects</NavLink></li>
-                    <li><NavLink to="#contact">Contact</NavLink></li>
+                <h2 className="header-h1"><a href="/">mg</a></h2>
+                <FontAwesomeIcon icon={faBars} className={!navbarHidden} onClick={toggleMenu} />
+                <ul className={navbarHidden}>
+                    <li><FontAwesomeIcon icon={faXmark} className="navbar-hidden" onClick={toggleMenu} /></li>
+                    <li onClick={toggleMenu}><a href="#landing">Home</a></li>
+                    <li onClick={toggleMenu}><a href="#about">About</a></li>
+                    <li onClick={toggleMenu}><a href="#projects">Projects</a></li>
+                    <li onClick={toggleMenu}><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>

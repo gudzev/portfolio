@@ -1,0 +1,37 @@
+.not-found
+{
+    min-height: 100vh;
+    background: var(--bg-medium);
+    background: linear-gradient(180deg, rgba(33, 33, 33, 1) 0%, rgba(18, 18, 31, 1) 100%);
+}
+
+.content > *
+{
+    margin: 20px;
+}
+
+.content h1
+{
+    color: var(--text-primary);
+}
+
+.content h2
+{
+    color: var(--text-secondary);
+}
+
+.content p
+{
+    color: var(--text-muted);
+    text-align: center;
+}
+
+.content
+{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

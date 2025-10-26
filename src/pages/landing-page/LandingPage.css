@@ -1,6 +1,5 @@
 .landing
 {
     min-height: 100vh;
-    background: #212121;
-    background: linear-gradient(180deg, rgba(33, 33, 33, 1) 0%, rgba(18, 18, 31, 1) 100%);
+    background-color: var(--bg-mid);
 }

@@ -5,7 +5,7 @@ import "./LandingPage.css";
 export function LandingPage()
 {
     return (
-        <section className="landing">
+        <section className="landing" id="landing">
             <Header />
         </section>
     );

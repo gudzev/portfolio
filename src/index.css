@@ -11,16 +11,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --bg-dark: #12121F; 
   --bg-mid: #212121; 
-  --bg-light: #2C2C3A;
+  --bg-light: #2f2f30;
 
   --text-primary: #FFFFFF;
   --text-secondary: #BBBBBB; 
   --text-muted: #888888;
 
-  --border-light: #333344;
-  --border-dark: #1A1A2E;
+  --border-light: #232323;
+
+  scroll-behavior: smooth;
 }
 
 .poppins-light {
