@@ -1,17 +1,54 @@
 import './App.css';
 
-import { Header } from './components/header/Header';
-import { LandingPage } from './pages/landing-page/LandingPage';
+import { HomePage } from './pages/home-page/HomePage';
 import { AboutPage } from "./pages/about-page/AboutPage";
+import { ProjectsPage } from './pages/projects-page/ProjectsPage';
+import { ContactPage } from './pages/contact-page/ContactPage';
+import { Footer } from "./components/footer/Footer";
 import { NotFoundPage } from './pages/not-found-page/NotFoundPage';
+import { Wrapper } from './components/wrapper/wrapper';
+
 import { Routes, Route } from "react-router";  
+import { useState, useEffect } from 'react';
 
 function MainPage()
 {
+  const [showWrapper, setShowWrapper] = useState(true);
+
+  const removeWrapper = () =>
+  {
+    setTimeout(() =>
+    {
+      setShowWrapper(false);
+    }, 100)
+  }
+
+  useEffect(() =>
+  {
+    if(document.readyState == "complete")
+    {
+      removeWrapper();
+    }
+    else
+    {
+      document.addEventListener("DOMContentLoaded", removeWrapper);
+
+      return () =>
+      {
+        document.removeEventListener("DOMContentLoaded", removeWrapper);
+      }
+    }
+  }, []);
+
+
   return (
     <>
-      <LandingPage />
+      {showWrapper && <Wrapper />}
+      <HomePage />
       <AboutPage />
+      <ProjectsPage />
+      <ContactPage />
+      <Footer />
     </>
   )
 }

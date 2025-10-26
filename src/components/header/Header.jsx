@@ -23,7 +23,7 @@ export function Header()
                 <FontAwesomeIcon icon={faBars} className={!navbarHidden} onClick={toggleMenu} />
                 <ul className={navbarHidden}>
                     <li><FontAwesomeIcon icon={faXmark} className="navbar-hidden" onClick={toggleMenu} /></li>
-                    <li onClick={toggleMenu}><a href="#landing">Home</a></li>
+                    <li onClick={toggleMenu}><a href="#home">Home</a></li>
                     <li onClick={toggleMenu}><a href="#about">About</a></li>
                     <li onClick={toggleMenu}><a href="#projects">Projects</a></li>
                     <li onClick={toggleMenu}><a href="#contact">Contact</a></li>

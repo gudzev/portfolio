@@ -1,11 +1,11 @@
 import { Header } from "../../components/header/Header";
 
-import "./LandingPage.css";
+import "./HomePage.css";
 
-export function LandingPage()
+export function HomePage()
 {
     return (
-        <section className="landing" id="landing">
+        <section className="home" id="home">
             <Header />
         </section>
     );
