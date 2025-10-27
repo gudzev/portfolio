@@ -17,26 +17,19 @@ function MainPage()
 
   const removeWrapper = () =>
   {
-    setTimeout(() =>
-    {
-      setShowWrapper(false);
-    }, 100)
+    setShowWrapper(false);
   }
 
   useEffect(() =>
   {
-    if(document.readyState == "complete")
+    const timerRemoveWrapper = setTimeout(() =>
     {
       removeWrapper();
-    }
-    else
-    {
-      document.addEventListener("DOMContentLoaded", removeWrapper);
+    }, 100);
 
-      return () =>
-      {
-        document.removeEventListener("DOMContentLoaded", removeWrapper);
-      }
+    return () =>
+    {
+      clearTimeout(timerRemoveWrapper);
     }
   }, []);
 

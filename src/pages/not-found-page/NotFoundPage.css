@@ -26,6 +26,24 @@
     text-align: center;
 }
 
+.content a
+{
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    border: 1px solid var(--text-primary);
+    background-color: transparent;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: all .2s;
+}
+
+.content a:hover
+{
+    color: var(--text-primary);
+    background-color: var(--bg-mid);
+}
+
 .content
 {
     width: 100%;

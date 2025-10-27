@@ -15,7 +15,7 @@ header nav
     align-items: center;
     width: 1200px;
     height: 60px;
-    padding: 5px 40px;
+    padding: 5px 80px;
 }
 
 header nav ul
@@ -116,6 +116,11 @@ header nav svg
         transition: all .3s;
         z-index: 999;
         transition: all .3s;
+    }
+
+    header nav
+    {
+        padding: 15px 30px;
     }
 
     header nav ul li

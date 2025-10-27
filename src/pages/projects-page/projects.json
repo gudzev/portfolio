@@ -1,0 +1,12 @@
+{
+    "projects": [
+        {
+            "id" : "1",
+            "name" : "MoviesDB",
+            "url" : "https://gudzev-moviesdb.netlify.app/",
+            "image" : "/images/MoviesDB.png",
+            "stack" : ["HTML", "CSS", "JavaScript", "TMDB API"],
+            "description": "Website that display currently popular TV shows and movies with search capabilities."
+        }
+    ]
+}

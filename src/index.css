@@ -18,6 +18,11 @@
   --text-secondary: #BBBBBB; 
   --text-muted: #888888;
 
+  --accent-primary: #10B981;
+  --accent-hover: #059669;
+  --accent-glow: #34D399;
+
+
   --border-light: #232323;
 
   scroll-behavior: smooth;
