@@ -5,7 +5,7 @@ import "./HomePage.css";
 export function HomePage()
 {
     return (
-        <section className="home" id="home">
+        <main className="home" id="home">
             <Header />
 
             <div className="home-container">
@@ -39,6 +39,6 @@ export function HomePage()
 
                 </div>
             </div>
-        </section>
+        </main>
     );
 }

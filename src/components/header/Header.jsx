@@ -20,9 +20,9 @@ export function Header()
         <header>
             <nav>
                 <h2 className="header-h1"><a href="/">mg</a></h2>
-                <FontAwesomeIcon icon={faBars} className={!navbarHidden} onClick={toggleMenu} />
+                <FontAwesomeIcon icon={faBars} className={!navbarHidden} onClick={toggleMenu} aria-label="Open navigation menu" />
                 <ul className={navbarHidden}>
-                    <li><FontAwesomeIcon icon={faXmark} className="navbar-hidden" onClick={toggleMenu} /></li>
+                    <li><FontAwesomeIcon icon={faXmark} className="navbar-hidden" onClick={toggleMenu} aria-label="Close navigation menu" /></li>
                     <li onClick={toggleMenu}><a href="#home">Home</a></li>
                     <li onClick={toggleMenu}><a href="#projects">Projects</a></li>
                     <li onClick={toggleMenu}><a href="#contact">Contact</a></li>
