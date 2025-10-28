@@ -12,7 +12,7 @@ export function HomePage()
                 <div className="home-information">
                     <div className="personal-information">
                         <h1 className="personal-information-h1">Marko Gudžev</h1>
-                        <h3 className="personal-information-h3">A software engineering student.</h3>
+                        <h2 className="personal-information-h3">A software engineering student.</h2>
 
                         <div className="btns">
                             <a className="btn" href="#projects">
@@ -25,7 +25,7 @@ export function HomePage()
                         </div>
                     </div>
                     <div className="personal-image">
-                        <img src="/images/me.webp" className="personal-img" alt="Personal image" loading="lazy"/>
+                        <img src="/images/me.webp" className="personal-img" alt="Personal image" loading="lazy" fetchPriority="high"/>
                     </div>
 
                     <div className="personal-tech-stack">

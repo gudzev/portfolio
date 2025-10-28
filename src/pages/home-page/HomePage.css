@@ -92,7 +92,7 @@
     color: var(--text-primary);
 }
 
-.personal-information h3
+.personal-information h2
 {
     font-size: 1rem;
     color: var(--text-secondary);
