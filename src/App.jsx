@@ -1,12 +1,12 @@
 import './App.css';
 
-import { HomePage } from './pages/home-page/HomePage';
-import { AboutPage } from "./pages/about-page/AboutPage";
-import { ProjectsPage } from './pages/projects-page/ProjectsPage';
-import { ContactPage } from './pages/contact-page/ContactPage';
-import { Footer } from "./components/footer/Footer";
-import { NotFoundPage } from './pages/not-found-page/NotFoundPage';
-import { Wrapper } from './components/wrapper/wrapper';
+import { HomePage } from './pages/home-page/HomePage.jsx';
+import { AboutPage } from "./pages/about-page/AboutPage.jsx"; // About Page is currently not being used
+import { ProjectsPage } from './pages/projects-page/ProjectsPage.jsx';
+import { ContactPage } from './pages/contact-page/ContactPage.jsx';
+import { Footer } from "./components/footer/Footer.jsx";
+import { NotFoundPage } from './pages/not-found-page/NotFoundPage.jsx';
+import { Wrapper } from './components/wrapper/Wrapper.jsx';
 
 import { Routes, Route } from "react-router";  
 import { useState, useEffect } from 'react';
