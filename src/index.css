@@ -5,42 +5,37 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   --bg-mid: #212121; 
   --bg-light: #2f2f30;
-
   --text-primary: #FFFFFF;
   --text-secondary: #BBBBBB; 
   --text-muted: #888888;
-
   --accent-primary: #10B981;
   --accent-hover: #059669;
   --accent-glow: #34D399;
-
-
   --border-light: #232323;
-
-  scroll-behavior: smooth;
 }
 
-.poppins-light {
+.poppins-light 
+{
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
-.poppins-regular {
+.poppins-regular 
+{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.poppins-bold {
+.poppins-bold 
+{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;

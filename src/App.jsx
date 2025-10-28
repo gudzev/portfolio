@@ -25,7 +25,7 @@ function MainPage()
     const timerRemoveWrapper = setTimeout(() =>
     {
       removeWrapper();
-    }, 100);
+    }, 150);
 
     return () =>
     {
@@ -38,7 +38,6 @@ function MainPage()
     <>
       {showWrapper && <Wrapper />}
       <HomePage />
-      <AboutPage />
       <ProjectsPage />
       <ContactPage />
       <Footer />

@@ -14,7 +14,6 @@ export function Footer()
                     </div>
                     <div className="flex-column">
                         <a href="#home" className="footer-link">Home</a>
-                        <a href="#about" className="footer-link">About</a>
                         <a href="#projects" className="footer-link">Projects</a>
                         <a href="#contact" className="footer-link">Contact</a>
                     </div>
