@@ -107,7 +107,7 @@ header nav svg
     {
         background-color: var(--bg-mid);
         position: fixed;
-        top: -100%;
+        top: -200%;
         left: 0;
         list-style: none;
         display: flex;

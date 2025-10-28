@@ -24,7 +24,7 @@ export function Project({name, description, stack, url, image})
                 }
             </div>
             <div className="project-footer">
-                <a href={url} target="_blank">Visit</a>
+                <a href={url} target="_blank" aria-label={"Visit" + `${name}`}>Visit</a>
             </div>
         </div>
     )

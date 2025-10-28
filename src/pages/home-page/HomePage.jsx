@@ -25,7 +25,7 @@ export function HomePage()
                         </div>
                     </div>
                     <div className="personal-image">
-                        <img src="/images/me.webp" className="personal-img" alt="Personal image" loading="lazy" fetchPriority="high"/>
+                        <img src="/images/me.webp" className="personal-img" alt="Personal image" fetchPriority="high"/>
                     </div>
 
                     <div className="personal-tech-stack">
