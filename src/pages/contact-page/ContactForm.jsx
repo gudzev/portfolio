@@ -22,8 +22,9 @@ export function ContactForm({setShowMessage})
             {
                 setShowMessage(1)
             },
-            () => 
+            (error) => 
             {
+                console.log(error);
                 setShowMessage(-1);
             },
         ).finally(() =>
