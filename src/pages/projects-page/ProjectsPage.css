@@ -65,6 +65,7 @@
 .project-description-container p
 {
     color: var(--text-secondary);
+    margin-bottom: 10px;
 }
 
 .project-img-container

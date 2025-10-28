@@ -14,7 +14,7 @@
             "url" : "/gudzevai",
             "image" : "/images/gudzevai.gif",
             "stack" : ["React", "OpenRouter API"],
-            "description" : "Chatbot using OpenRouter's free API based on MiniMax M2 model."
+            "description" : "[UPCOMING PROJECT] Chatbot using OpenRouter's free API based on MiniMax M2 model."
         }
     ]
 }
