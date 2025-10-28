@@ -101,8 +101,8 @@
 
 .project-footer a:hover
 {
-    color: var(--accent-primary);
-    background-color: var(--text-primary);
+    color: var(--bg-mid);
+    background-color: var(--accent-hover);
 }
 
 .stack

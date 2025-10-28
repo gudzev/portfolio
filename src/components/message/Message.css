@@ -1,0 +1,46 @@
+.message
+{
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    width: 360px;
+    height: 100px;
+    z-index: 999;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .3s;
+    opacity: 0%;
+}
+
+.message h1
+{
+    color: var(--text-primary);
+    font-size: 1.2rem;
+}
+
+.message-error
+{
+    background-color: #D32F2F;
+    opacity: 100%;
+}
+
+.message-success
+{
+    background-color: #2E7D32;
+    opacity: 100%;
+}
+
+@media screen and (max-width: 768px) 
+{
+    .message
+    {
+        position: fixed;
+        margin: auto 10px;
+        width: 90%;
+        height: 100px;
+    }
+}

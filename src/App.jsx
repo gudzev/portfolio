@@ -1,7 +1,7 @@
 import './App.css';
 
 import { HomePage } from './pages/home-page/HomePage.jsx';
-import { AboutPage } from "./pages/about-page/AboutPage.jsx"; // About Page is currently not being used
+// About Page is currently not being used
 import { ProjectsPage } from './pages/projects-page/ProjectsPage.jsx';
 import { ContactPage } from './pages/contact-page/ContactPage.jsx';
 import { Footer } from "./components/footer/Footer.jsx";
@@ -11,9 +11,12 @@ import { Wrapper } from './components/wrapper/Wrapper.jsx';
 import { Routes, Route } from "react-router";  
 import { useState, useEffect } from 'react';
 
+import { Message } from "./components/message/Message";
+
 function MainPage()
 {
   const [showWrapper, setShowWrapper] = useState(true);
+  const [showMessage, setShowMessage] = useState(0);
 
   const removeWrapper = () =>
   {
@@ -25,7 +28,7 @@ function MainPage()
     const timerRemoveWrapper = setTimeout(() =>
     {
       removeWrapper();
-    }, 150);
+    }, 200);
 
     return () =>
     {
@@ -37,9 +40,10 @@ function MainPage()
   return (
     <>
       {showWrapper && <Wrapper />}
+      <Message showMessage={showMessage}/>
       <HomePage />
       <ProjectsPage />
-      <ContactPage />
+      <ContactPage setShowMessage={setShowMessage}/>
       <Footer />
     </>
   )
