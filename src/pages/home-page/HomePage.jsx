@@ -11,8 +11,8 @@ export function HomePage()
             <div className="home-container">
                 <div className="home-information">
                     <div className="personal-information">
-                        <h1>Marko Gudžev</h1>
-                        <h3>A software engineering student.</h3>
+                        <h1 className="personal-information-h1">Marko Gudžev</h1>
+                        <h3 className="personal-information-h3">A software engineering student.</h3>
 
                         <div className="btns">
                             <a className="btn" href="#projects">

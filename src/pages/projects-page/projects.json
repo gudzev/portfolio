@@ -7,6 +7,14 @@
             "image" : "/images/MoviesDB.png",
             "stack" : ["HTML", "CSS", "JavaScript", "TMDB API"],
             "description": "Website that display currently popular TV shows and movies with search capabilities."
+        },
+        {
+            "id" : "2",
+            "name" : "GudzevAI",
+            "url" : "/gudzevai",
+            "image" : "/images/gudzevai.gif",
+            "stack" : ["React", "DeepSeek API"],
+            "description" : "Chatbot using DeepSeek's free API"
         }
     ]
 }

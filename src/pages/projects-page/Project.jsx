@@ -3,7 +3,7 @@ export function Project({name, description, stack, url, image})
     return (
         <div className="project">
             <div className="project-img-container">
-                <img src={image} alt="MoviesDB Image" className="project-img" loading="lazy" />
+                <img src={image} alt={name} className="project-img" loading="lazy" />
             </div>
             <div className="project-name-container">
                 <h2>{name}</h2>
