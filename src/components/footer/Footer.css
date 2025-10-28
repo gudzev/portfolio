@@ -109,3 +109,37 @@ footer
         color: var(--text-primary);
     }
 }
+
+/* Tablets and small desktop */
+@media screen and ((min-width: 768px) and (max-width: 1199px))
+{
+    .footer
+    {
+        width: 100vw;
+        padding: 0px;
+    }
+
+    .footer-content > :not(.footer-legal) 
+    {
+        width: 33vw;
+        height: 210px;
+        padding: 20px;
+        color: var(--text-primary);
+    }
+
+    .footer-h2
+    {
+        font-size: 1.2rem;
+    }
+
+    .footer-legal
+    {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-content 
+    {
+        width: 100%;
+    }
+}

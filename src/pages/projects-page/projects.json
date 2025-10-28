@@ -13,8 +13,8 @@
             "name" : "GudzevAI",
             "url" : "/gudzevai",
             "image" : "/images/gudzevai.gif",
-            "stack" : ["React", "DeepSeek API"],
-            "description" : "Chatbot using DeepSeek's free API"
+            "stack" : ["React", "OpenRouter API"],
+            "description" : "Chatbot using OpenRouter's free API based on MiniMax M2 model."
         }
     ]
 }
