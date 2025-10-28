@@ -1,7 +1,7 @@
 export function ContactForm()
 {
     return (
-        <form className="contact-form">
+        <form className="contact-form" method="POST" netlify>
             <div className="contact-form-row">
                 <input type="text" className="form-input" placeholder="Your Name..." required/>
             </div>
