@@ -9,3 +9,4 @@ Test the live app here:
 ## 🛠️ Technologies used
 
 - React
+- React "Framer Motion" Library

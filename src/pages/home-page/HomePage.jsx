@@ -1,4 +1,5 @@
 import { Header } from "../../components/header/Header";
+import { LoadAnimation } from "../../utils/animations";
 
 import "./HomePage.css";
 
@@ -11,8 +12,9 @@ export function HomePage()
             <div className="home-container">
                 <div className="home-information">
                     <div className="personal-information">
-                        <h1 className="personal-information-h1">Marko Gudžev</h1>
-                        <h2 className="personal-information-h3">A software engineering student.</h2>
+
+                        <LoadAnimation dur={.8}><h1 className="personal-information-h1">Marko Gudžev</h1></LoadAnimation>
+                        <LoadAnimation dur={1.6}><h2 className="personal-information-h3">A software engineering student.</h2></LoadAnimation>
 
                         <div className="btns">
                             <a className="btn" href="#projects">
@@ -23,6 +25,7 @@ export function HomePage()
                                 Download Resume
                             </a>
                         </div>
+                        
                     </div>
                     <div className="personal-image">
                         <img src="/images/me.webp" className="personal-img" alt="Personal image" loading="lazy" fetchPriority="high"/>

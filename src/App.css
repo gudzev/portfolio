@@ -25,3 +25,10 @@ h3
 {
   font-size: 1.17rem;
 }
+
+.motion-div
+{
+  width: inherit;
+  display: inherit;
+  justify-content: center;
+}

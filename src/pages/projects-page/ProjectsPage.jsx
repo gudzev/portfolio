@@ -3,6 +3,7 @@ import "./ProjectsPage.css";
 import projectsData from "./projects.json";
 
 import { Project } from "./Project";
+import { LoadAnimation } from "../../utils/animations";
 
 export function ProjectsPage()
 {
@@ -10,7 +11,9 @@ export function ProjectsPage()
         <section className="projects" id="projects">
             <div className="projects-content">
                 <div className="projects-header">
-                    <h1>Projects</h1>
+                    <LoadAnimation dur={.8}>
+                        <h1>Projects</h1>
+                    </LoadAnimation>
                 </div>
                 <div className="projects-grid">
                     {

@@ -1,31 +1,35 @@
+import { LoadAnimation } from "../../utils/animations.jsx";
+
 export function Project({name, description, stack, url, image})
 {
     return (
-        <div className="project">
-            <div className="project-img-container">
-                <img src={image} alt={name} className="project-img" loading="lazy" />
-            </div>
-            <div className="project-name-container">
-                <h2>{name}</h2>
-            </div>
-            <div className="project-description-container">
-                <p>{description}</p>
-            </div>
-            <div className="project-stack-container">
-                {
-                    stack.map((stackItem) =>
+        <LoadAnimation duration={.8}>
+            <div className="project">
+                <div className="project-img-container">
+                    <img src={image} alt={name} className="project-img" loading="lazy" />
+                </div>
+                <div className="project-name-container">
+                    <h2>{name}</h2>
+                </div>
+                <div className="project-description-container">
+                    <p>{description}</p>
+                </div>
+                <div className="project-stack-container">
                     {
-                        return (
-                            <span className="stack" key={crypto.randomUUID()}>
-                                {stackItem}
-                            </span>
-                        )
-                    })
-                }
+                        stack.map((stackItem) =>
+                        {
+                            return (
+                                <span className="stack" key={crypto.randomUUID()}>
+                                    {stackItem}
+                                </span>
+                            )
+                        })
+                    }
+                </div>
+                <div className="project-footer">
+                    <a href={url} target="_blank" aria-label={"Visit" + `${name}`}>Visit</a>
+                </div>
             </div>
-            <div className="project-footer">
-                <a href={url} target="_blank" aria-label={"Visit" + `${name}`}>Visit</a>
-            </div>
-        </div>
+        </LoadAnimation>
     )
 }

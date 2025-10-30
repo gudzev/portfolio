@@ -38,7 +38,7 @@
     background-color: var(--bg-mid);
     padding: 20px;
     color: var(--text-secondary);
-    transition: all .2s;
+    transition: ease ease-in .2s;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
